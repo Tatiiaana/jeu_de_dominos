@@ -1,0 +1,109 @@
+body {
+  
+  margin: auto;
+  padding: 0;
+  background-color: #c7ecee;
+  background-size: cover ;
+  
+}
+
+#start {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10%;
+  margin: auto;
+  
+}
+
+
+
+h1 {
+
+  text-align: center;
+  line-height: 1.5em;
+  margin-top: 0.2em;
+  color: #eb4d4b;
+  font-size: 130px;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 5px 5px 0px #ff7979;
+
+}
+
+
+
+#gamemodeSelect {
+  
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: white;
+  outline: 0px;
+  background-color: #eb4d4b;
+  border-style: none;
+  box-shadow: 5px 5px 0px #ff7979;
+  border-radius: 3px;
+  
+}
+
+.fancyBtn {
+  cursor: pointer;
+  white-space: nowrap;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  outline: 0px;
+  background-color: #eb4d4b;
+  border-style: none;
+  box-shadow: 5px 5px 0px #ff7979;
+  border-radius: 3px;
+  
+  
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+
+#game {
+  display: none;
+}
+
+
+.nav{
+  background: #eb4d4b;
+  width: 100%;
+  padding: 2em;
+}
+
+.left{
+  background: #eb4d4b;
+  flex: 0 0 25%;
+  height: 550px;
+}
+
+.right{
+  background: #eb4d4b;
+  flex: 0 0 25%;
+}
+
+.game{
+  background: #c7ecee;
+  flex: 0 0 50%;
+}
+
+.hand{
+  background: #eb4d4b;
+  width: 100%;
+  padding: 6em;
+}
+
+.content{
+  display:flex;
+  flex: auto;
+}
+
