@@ -96,7 +96,7 @@ h1 {
   flex: 0 0 50%;
 }
 
-.hand{
+#handPlayer {
   background: #eb4d4b;
   width: 100%;
   padding: 6em;
