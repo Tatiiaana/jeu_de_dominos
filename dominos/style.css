@@ -29,10 +29,9 @@ h1 {
   font-size: 130px;
   font-family: 'Pacifico', cursive;
   text-shadow: 5px 5px 0px #ff7979;
+  margin-bottom: 20px;
 
 }
-
-
 
 #gamemodeSelect {
   
@@ -47,13 +46,14 @@ h1 {
   border-style: none;
   box-shadow: 5px 5px 0px #ff7979;
   border-radius: 3px;
+  margin-bottom: 30px;
   
 }
 
 .fancyBtn {
   cursor: pointer;
   white-space: nowrap;
-  width: 150px;
+  width: 200px;
   height: 40px;
   font-size: 20px;
   color: white;
@@ -96,7 +96,13 @@ h1 {
   flex: 0 0 50%;
 }
 
-#handPlayer {
+#handPlayerOne {
+  background: #eb4d4b;
+  width: 100%;
+  padding: 6em;
+}
+
+#handPlayerTwo {
   background: #eb4d4b;
   width: 100%;
   padding: 6em;
