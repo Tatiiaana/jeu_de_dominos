@@ -18,7 +18,8 @@
 
     </head>
 
-     <body onLoad="window.setTimeout('history.go(0)', 10000)"> 
+    
+         <body onLoad="window.setTimeout('history.go(0)', 1000000)"> 
     
 
         <!-- L'attribut universel id définit un identifiant unique qui doit être unique pour l'ensemble du document. Le but de cet attribut est de pouvoir identifier un élément lorsqu'on crée un lien, qu'on souhaite le manipuler avec un script ou qu'on le met en forme avec CSS. -->
@@ -62,13 +63,14 @@
                 <div class="content">
                 <div class=left></div>
                 <div class=game></div>
-                <div class="right"></div>
+                <div class="right">
+                </div>
 
             </div>
+            </div>
+            <button id="button">Draw</button>
             <div id=handPlayerOne></div>
             <div id=handPlayerTwo></div>
-
-            </div>
     <!-- Relier son JS à son HTML-->
         
     <script src="domino.js"></script>

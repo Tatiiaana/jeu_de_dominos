@@ -93,7 +93,7 @@ function Dominoes(){
     this.play(); //Commence à jouer en alternance
   }
 
-  this.initialseTiles = function(){
+  this.initialiseTiles = function(){
     //Remplit le tableau de tuiles
     var n = 0;
     for(var square2 = 0; square2 <= 6; square2++){
@@ -153,7 +153,7 @@ this.play = function(){
         if(matchLineOfPlay) break;
       }
 
-      //Si le match est trouvé dans le stock des lignes de jeu, autrement le jeu va se bloquer et la partie se termine
+      //Si le match est trouvé dans le stock des lignes de jeu, autrement le jeu va se bloquer et la partie se terminera
       if(matchLineOfPlay){
         var drawnTile = this.tiles.splice(i, 1); //Retire le domino pioché
         this.write(this.players[this.currentPlayer].name + " can't play, drawing tile " + this.writeTile(drawnTile[0]));

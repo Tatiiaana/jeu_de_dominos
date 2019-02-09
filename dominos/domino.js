@@ -28,7 +28,9 @@ function createDominos() {
       dominos[i] = "domino"+i+".png";
   }
 
+
 }
+
 createDominos(dominos);
 
 function shuffle(a) {
@@ -38,25 +40,57 @@ function shuffle(a) {
   }
   return a;
 }
+
 var myDominos = createDominos();
 shuffle(dominos);
 console.log(dominos);
 
-function distribution(x) {
-  handPlayerOne = array.splice(6);
-  handPlayerTwo = array.splice(13);
+var handPlayerOne = 7;
+var handPlayerTwo = 7;
+
+
+function distribution(array) {
+  handPlayerOne = array.splice(array.length - handPlayerOne);
+  handPlayerTwo = array.splice(array.length - handPlayerTwo);
 
   console.log(handPlayerOne);
   console.log(handPlayerTwo);
-  return x;
+  
+  return array;
+
 }
 
 distribution(dominos);
 
-document.getElementById("handPlayerOne").innerHTML = '<img src="' + handPlayerOne.join('" /><img src="') + '" />';
-document.getElementById("handPlayerTwo").innerHTML = '<img src="' + handPlayerTwo.join('" /><img src="') + '" />';
-console.log(handPlayerOne);
-console.log(handPlayerTwo);
+
+function draw(array) {
+
+  var newDominos = array.splice(array.length - handPlayerOne);
+  //newDominos = array.splice(array.length - handPlayerTwo);
+  handPlayerOne.push(newDominos[0]);
+  handPlayerTwo.push(newDominos[0]);
+  console.log(newDominos);
+  return array;
+
+};
+  document.getElementById("button").addEventListener('click', function(){
+    draw(dominos);
+  })
+  
+
+function alternatePlayer() {
+if (handPlayerOne) {
+
+
+  return handPlayerTwo;
+}
+}
+
+  document.getElementById("handPlayerOne").innerHTML = '<img src="' + handPlayerOne.join('" /><img src="') + '" />';
+  document.getElementById("handPlayerTwo").innerHTML = '<img src="' + handPlayerTwo.join('" /><img src="') + '" />';
+
+
+
 
 
 
